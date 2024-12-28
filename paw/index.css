@@ -1,0 +1,158 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(183, 208, 255);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #264e81;
+    color: white;
+    padding: 0.9375rem 1.25rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 3.125rem;
+    width: auto;
+    border-radius: 2.8125rem;
+    margin-right: 0.625rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 0.625rem;
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.user {
+    margin-bottom: 1%;
+    font-size: 0.9rem;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(26, 25, 25);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.pet-card {
+    background-color: rgba(254, 255, 255, 0.719);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 20%;
+    text-align: center;
+    transition: transform 0.2s;
+    max-height: 400%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 12.5rem;
+    object-fit: cover;
+}
+
+.pet-card h3 {
+    height: fit-content;
+    text-align: center;
+    margin-top: 0rem;
+    color: #ffffff;
+    background-color: #264d81;
+}
+
+.pet-card p {
+    text-align: left;
+    margin: 1%;
+    margin-left: 0.3125rem;
+    color: #555;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pet-card form {
+    margin: 0.625rem 0;
+}
+
+#breed {
+    margin-left: 2rem;
+}
+
+.nv {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2.5rem;
+}
